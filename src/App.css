@@ -1,0 +1,29 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start outside from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move completely off-screen to the left */
+  }
+}
+
+.scroll-text {
+  animation: marquee 8s linear infinite; /* Adjust duration for speed */
+  display: inline-block; /* Ensure text scrolls in a single line */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.row-container {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+
