@@ -603,9 +603,7 @@ function DefaultNavbar() {
                       </li>
                     </ul>
                   </nav>
-                  <footer className="bg-yellow-600 text-center p-2 w-80 flex justify-self-center rounded-md">
-                    <p>&copy; 2024 Your Company. All rights reserved.</p>
-                  </footer>
+                 
                 </div>
               )}
             </div>
