@@ -15,6 +15,7 @@ import Land from "./components/Land";
 import Commercial from "./components/Commercial";
 import Residential from "./components/Residential";
 import GetInTouch from "./components/GetInTouch.jsx";
+import Form from "./components/Form.jsx";
 
 // Default layout with DefaultNavbar
 const DefaultLayout = () => (
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/Land" element={<Land />} />
           <Route path="/Commercial" element={<Commercial />} />
           <Route path="/Residential" element={<Residential />} />
+          <Route path="/Form" element={<Form />} />
         </Route>
         {/* </Route> */}
       </Routes>

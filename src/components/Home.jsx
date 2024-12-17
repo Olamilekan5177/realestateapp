@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Flag from "../assets/image.png";
-
+import { Link } from "react-router-dom"; // If you still need Link for other navigation
 const Home = () => {
   return (
     <div>
@@ -34,9 +33,12 @@ const Home = () => {
             </h1>
           </div>
           <div class="mt-9 md:grid md:grid-cols-3">
-            <button class="mr-6 border-solid py-3 px-8 bg-yellow-600 rounded-sm hover:bg-[hsl(288,4%,20%)]">
+            <Link
+              to="/Form"
+              className="mr-6 border-solid py-3 px-8 bg-yellow-600 rounded-sm hover:bg-[hsl(288,4%,20%)] text-white text-center inline-block"
+            >
               Register now
-            </button>
+            </Link>
             <button class="border-solid border-yellow-600 py-2.5 px-8 rounded-sm border-2  text-yellow-600 hover:bg-[hsl(288,4%,20%)] ">
               Watch live
             </button>
@@ -49,10 +51,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div
-          class="mt-28 h-32 text-center grid md:grid-cols-2"
-          
-        >
+        <div class="mt-28 h-32 text-center grid md:grid-cols-2">
           <div class="md:h-32 h-24">
             <h1 class="w-full flex items-center justify-center h-full font-bold text-xl text-white bg-[hsl(288,4%,20%)] hover:text-[hsl(288,4%,20%)]">
               sales@barneyestates.co.uk
